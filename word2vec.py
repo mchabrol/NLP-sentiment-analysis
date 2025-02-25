@@ -23,13 +23,14 @@ class ReviewTokenizer:
 
 
 class Word2VecEmbedder:
-    def __init__(self, vector_size: int=100, window:int =5, min_count:int =2, sg:int =1, workers:int =4):
+    def __init__(self, vector_size: int=100, window:int=10, min_count:int=2, sg:int=1, workers:int=4):
         self.vector_size = vector_size
         self.window = window
         self.min_count = min_count
         self.sg = sg
         self.workers = workers
         self.model = None
+        
 
     def train(self, tokenized_reviews: List[str]) -> None:
         """Train the Word2Vec model on tokenized reviews
@@ -46,6 +47,7 @@ class Word2VecEmbedder:
             workers=self.workers
         )
         logger.info("Word2Vec model trained successfully")
+        self.wv = self.model.wv
 
     def embed_reviews(self, tokenized_reviews: List[str]) -> np.ndarray:
         """Compute embeddings by averaging word vectors for each review
@@ -56,7 +58,7 @@ class Word2VecEmbedder:
         """
         embeddings = []
         for tokens in tokenized_reviews:
-            vectors = [self.model.wv[token] for token in tokens if token in self.model.wv]
+            vectors = [self.wv[token] for token in tokens if token in self.wv]
             if vectors:
                 embed = np.mean(vectors, axis=0)
             else:
