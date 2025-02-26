@@ -11,6 +11,7 @@ NLP-SENTIMENT-ANALYSIS/
 │   │   │   ├── df_test.csv
 │   │   │   ├── df_train.csv
 │   │   ├── embeddings/
+│   │   │   ├── X_train_word2vec_embeddings.pkl
 │   ├── raws/aclImdb/
 │   │   ├── test/
 │   │   ├── train/
