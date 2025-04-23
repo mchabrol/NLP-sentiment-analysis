@@ -21,6 +21,14 @@ The goal is to classify movie reviews as positive or negative using different ma
 
 The dataset used is the IMDB movie reviews dataset, which consists of 50,000 labeled reviews (25,000 positive and 25,000 negative). 
 
+## How to Run
+
+To reproduce the results, run the following notebooks sequentially:
+
+1. `preprocess_data.ipynb` – for data cleaning and formatting  
+2. `exploratory_data_analysis.ipynb` – for visualizing and analyzing the dataset  
+3. `main.ipynb` – for training and evaluating the models
+
 ## Results
 
 The table below summarizes the performance of each model on the sentiment classification task:
