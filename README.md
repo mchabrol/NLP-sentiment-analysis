@@ -43,6 +43,17 @@ The table below summarizes the performance of each model on the sentiment classi
 
 This project shows the effectiveness of modern transformer-based models like RoBERTa over traditional machine learning models in sentiment classification tasks. By using contextual embeddings, RoBERTa achieves the highest performance, especially in handling nuances like sarcasm and negation.
 
+## Contributions 
+This project was conducted collaboratively by Suzie Grondin and Marion Chabrol. The choice of models to test (TF-IDF, Word2Vec, and RoBERTa) was made jointly after discussion. About code architecture, Marion organized the overall code and repository structure.
+
+Both authors participated in the data analysis. Suzie mainly worked on the wordcloud visualizations, while Marion conducted the focused analysis of specific ambiguous words.
+
+They also both contributed to the implementation of the TF-IDF + Naïve Bayes model: Suzie implemented the main classification pipeline, while Marion contributed to code cleaning and the selection of hyperparameters.
+
+For the other models, Marion was primarily responsible for the implementation of the Word2Vec + SVM model, while Suzie focused on fine-tuning the RoBERTa transformer. 
+
+Nonetheless, each of them contributed to both parts, reviewing and refining the work collaboratively.
+
 ## Code Architecture
 
 ```plaintext
