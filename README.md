@@ -59,7 +59,7 @@ Nonetheless, each of them contributed to both parts, reviewing and refining the 
 ```plaintext
 NLP-SENTIMENT-ANALYSIS/
 
-│── data/            
+│── data/
 │   ├── processed/
 │   │   ├── datasets/
 │   │   │   ├── df_test.csv
@@ -72,18 +72,22 @@ NLP-SENTIMENT-ANALYSIS/
 │   │   ├── imdb.vocab
 │   │   ├── imdbErt.txt
 │   │   ├── stop_word_rate.txt
-│── notebooks/           
-│   ├── exploratory_data_analysis.ipynb  
+│── notebooks/
+│   ├── exploratory_data_analysis.ipynb
 │   ├── main.ipynb
-│   ├── preprocess_data.ipynb                    
-│── src/                    
-│   ├── models/               
-│   │   ├── tf_idf.py       
+│   ├── preprocess_data.ipynb
+│   ├── roberta_training.ipynb      ← new
+│── src/
+│   ├── models/
+│   │   ├── tf_idf.py
 │   │   ├── word2vec.py
 │   │   ├── roberta.py
-│   ├── data_processing.py             
-│── README.md               
+│   ├── data_processing.py
+│── README.md
 │── .gitignore
+│── report_CHABROL_Marion.pdf
+│── report_GRONDIN_Suzie.pdf
+│── requirements.txt
 ```
 
 ## Contact
